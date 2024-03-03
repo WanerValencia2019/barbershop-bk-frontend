@@ -1,4 +1,6 @@
 name: Dev actions
+run-name: ${{ github.run_id }} ${{ github.actor }} running dev integration
+
 on:
   push:
     branches:
@@ -6,7 +8,6 @@ on:
   pull_request:
     branches:
       - develop
-runs-on: ubuntu-latest
 
 jobs:
   build:
