@@ -3,7 +3,7 @@ run-name: ${{ github.run_id }} ${{ github.actor }} running dev integration
 on:
   push:
     branches:
-      - devevelop
+      - develop
   pull_request:
     branches:
       - develop
